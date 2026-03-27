@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Leave Me - Page 3/3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            position: relative;
+            overflow: hidden;
+        }
+        body::before {
+            content: '💔'; position: absolute; font-size: 100px; opacity: 0.1; animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float { 0%,100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-20px) rotate(180deg); } }
+        .container { 
+            background: rgba(255,255,255,0.95); 
+            backdrop-filter: blur(20px); 
+            border-radius: 30px; 
+            padding: 80px 40px; 
+            max-width: 600px; 
+            width: 90%; 
+            text-align: center; 
+            box-shadow: 0 25px 50px rgba(0,0,0,0.25); 
+            animation: fadeInUp 1.2s ease-out;
+            position: relative; z-index: 1;
+        }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(50px) scale(0.9); } to { opacity: 1; transform: translateY(0) scale(1); } }
+        .broken-heart { font-size: 120px; color: #e74c3c; margin-bottom: 20px; animation: shake 0.5s ease-in-out infinite alternate; }
+        @keyframes shake { 0% { transform: rotate(-2deg); } 100% { transform: rotate(2deg); } }
+        h1 { font-family: 'Dancing Script', cursive; font-size: 4.5em; color: #2c3e50; margin-bottom: 30px; text-shadow: 3px 3px 6px rgba(0,0,0,0.2); }
+        .plea { 
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 50%, #fdcb6e 100%); 
+            border-radius: 25px; 
+            padding: 40px; 
+            margin: 30px 0; 
+            font-size: 1.4em; 
+            color: #2d3436; 
+            line-height: 1.7; 
+            box-shadow: 0 15px 40px rgba(255,107,107,0.4); 
+            border: 3px dashed #e17055;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse { 0%,100% { box-shadow: 0 15px 40px rgba(255,107,107,0.4); } 50% { box-shadow: 0 15px 40px rgba(255,107,107,0.7); } }
+        .cta-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 40px; }
+        .cta-button { 
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); 
+            color: white; 
+            border: none; 
+            padding: 20px 40px; 
+            font-size: 1.3em; 
+            font-weight: 700; 
+            border-radius: 50px; 
+            cursor: pointer; 
+            transition: all 0.3s ease; 
+            box-shadow: 0 12px 35px rgba(231,76,60,0.5); 
+            text-decoration: none; 
+            display: inline-block;
+            position: relative; overflow: hidden;
+        }
+        .cta-button::before {
+            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); transition: left 0.5s;
+        }
+        .cta-button:hover::before { left: 100%; }
+        .cta-button:hover { transform: translateY(-5px) scale(1.05); box-shadow: 0 20px 50px rgba(231,76,60,0.7); }
+        .forgive-btn { background: linear-gradient(135deg, #00b894 0%, #00a085 100%) !important; box-shadow: 0 12px 35px rgba(0,184,148,0.5) !important; }
+        .forgive-btn:hover { box-shadow: 0 20px 50px rgba(0,184,148,0.7) !important; }
+        .page-info { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.9); padding: 15px 25px; border-radius: 30px; font-weight: 700; color: #e74c3c; font-size: 1.1em; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .footer { margin-top: 30px; font-size: 1.1em; color: #7f8c8d; font-style: italic; font-weight: 500; }
+        @media (max-width: 768px) { h1 { font-size: 3.5em; } .broken-heart { font-size: 90px; } .cta-buttons { flex-direction: column; align-items: center; } }
+    </style>
+</head>
+<body>
+    <div class="page-info">FINAL PAGE 💔</div>
+    <div class="container">
+        <div class="broken-heart">💔</div>
+        <h1>Don't Leave Me</h1>
+        <div class="plea">
+            <strong>Please... Don't Leave Me kandaa!</strong><br><br>
+            Without you, my world is empty. Every heartbeat screams your name.
+            u got so close to me in such a less time it feels like we are destined to meet
+            ik I've made mistakes, but my love for you is real and forever. 
+            Give me one chance to show you how much you mean to me. 
+            <br><br>I can't be without you. 🥺💕
+        </div>
+        <div class="cta-buttons">
+            <a href="tel:+9148833160" class="cta-button">📞 Call Me NOW</a>
+            <a href="sms:+9148833160?body=I forgive you... I love you ❤️" class="cta-button forgive-btn">💌 Forgive Me</a>
+        </div>
+        <div class="footer">You're my everything. Please stay kanda. 🌹</div>
+    </div>
+</body>
+</html>

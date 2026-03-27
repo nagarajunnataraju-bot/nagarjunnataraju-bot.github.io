@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Promise - Page 2/3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; }
+        .container { background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-radius: 30px; padding: 60px 40px; max-width: 600px; width: 90%; text-align: center; box-shadow: 0 25px 50px rgba(0,0,0,0.15); animation: fadeInUp 1s ease-out; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+        .heart { font-size: 80px; color: #4ecdc4; margin-bottom: 20px; animation: heartbeat 1.5s ease-in-out infinite; }
+        @keyframes heartbeat { 0%,100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+        h1 { font-family: 'Dancing Script', cursive; font-size: 3.5em; color: #333; margin-bottom: 20px; }
+        .promise { background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%); border-radius: 20px; padding: 30px; margin: 30px 0; font-size: 1.2em; color: #444; line-height: 1.8; box-shadow: 0 10px 30px rgba(210,153,194,0.3); border-left: 5px solid #4ecdc4; font-weight: 500; }
+        .nav-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px; }
+        .btn { padding: 15px 30px; font-size: 1.1em; font-weight: 600; border-radius: 50px; cursor: pointer; transition: all 0.3s ease; text-decoration: none; box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+        .prev-btn { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); color: #444; }
+        .next-btn { background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 12px 35px rgba(0,0,0,0.3); }
+        .page-info { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.8); padding: 10px 20px; border-radius: 25px; font-weight: 600; color: #4ecdc4; }
+        @media (max-width: 768px) { h1 { font-size: 2.8em; } .heart { font-size: 60px; } .nav-buttons { flex-direction: column; align-items: center; } }
+    </style>
+</head>
+<body>
+    <div class="page-info">Page 2/3 💕</div>
+    <div class="container">
+        <div class="heart">💝</div>
+        <h1>My Promise</h1>
+        <div class="promise">
+            💕 I promise to you kanda:<br><br>
+            - <strong>Listen</strong> with my heart, not just my ears<br>
+            - <strong>Understand</strong> your feelings before I respond<br>
+            - <strong>Respect</strong> your perspective always<br>
+            - <strong>Love</strong> you better every single day<br><br>
+            You are my world, and I'll prove it to you.
+        </div>
+        <div class="nav-buttons">
+            <a href="index.html" class="btn prev-btn">← Back</a>
+            <a href="page3.html" class="btn next-btn">→ Final Plea</a>
+        </div>
+    </div>
+</body>
+</html>
